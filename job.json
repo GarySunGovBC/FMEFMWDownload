@@ -1,0 +1,37 @@
+{
+  "output_dir": "output",
+  "fmw_dir": "fmw",
+  "fme_server": "gienah.dmz",
+  "repo_filter": {
+    "BCGW_REP_OTHER": "0",
+    "BCGW_CHILD": "0",
+    "BCGW_REP_ON_REQUEST": "0",
+    "BCGW_SCHEDULED": "1",
+    "FWA_SUPPORT": "0"
+  },
+  "filter_fmw_name": [
+    {
+      "name": "^gsr_",
+      "job_filter_rule": "exclude"
+    }
+  ],
+  "filter_fmw_prop": [
+    {
+      "DEST_SCHEMA": {
+        "name": "DEST_SCHEMA"
+      },
+      "job_filter_rule": "include"
+    },
+    {
+      "DEST_DB_ENV_KEY": {
+        "defaultValue": "DLV"
+      },
+      "job_filter_rule": "include"
+    }
+  ],
+  "match": [
+  ],
+  "overwrite": true
+}
+
+
