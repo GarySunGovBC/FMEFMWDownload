@@ -3,9 +3,7 @@ Downlad FMW From FME Server
 
 # Run Environment
 - Python version is v3.8 or above
-- Python.exe main.py [arg]
-  - copy: copy repositories
-  - compare: compare repositories
+- Python.exe main.py
 
 # Configuration
 - app.json
